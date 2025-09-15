@@ -2,13 +2,13 @@
   const ws = new WebSocket("ws://localhost:35729");
   document.querySelector("#nsutils-side-preview").click();
 
-  const iframe = document.querySelector("#nsutils-side-preview-iframe");
+  // const iframe = document.querySelector("#nsutils-side-preview-iframe");
 
-  iframe.style.position = "fixed";
-  iframe.style.top = "0";
-  iframe.style.left = "0";
-  iframe.style.width = "100vw";
-  iframe.style.height = "100vh";
+  // iframe.style.position = "fixed";
+  // iframe.style.top = "0";
+  // iframe.style.left = "0";
+  // iframe.style.width = "100vw";
+  // iframe.style.height = "100vh";
   ws.onmessage = (msg) => {
     try {
       const data = JSON.parse(msg.data);
